@@ -4,30 +4,54 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Code Quiz</title>
+	<!-- adding bootrstrap link to make page  more interactive -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-	<div class="panel">
-		<div class="result">
 
+<body>
+	<!-- container for main content and start button -->
+	<div class="container">
+		<div id="start">
+			<h1>Coding Quiz</h1>
+			<br>
+			<p>
+				Test your knoweledge on Javascript by answering the following trivia questions! You've got 50 seconds on the clock!
+				Be careful! With each incorrect answer, 10 seconds will be deducted from your time remaining! Final score is determined based on remaining time.
+			</p>
+			<button type="button" id="sbtn" class="btn btn-outline-light btn-lg">Start</button>
 		</div>
-		<div class="question-container" id="question">
-			Question goes here.
-		</div>
-		<div class="option-container">
-			<button class="option" onclick="" id="op1" >option1</button>
-	
-			<button class="option" id="op2" >option2</button>
-	
-			<button class="option" id="op3">option3</button>
-	
-			<button class="option" id="op4">option4</button>
-		</div>
-		<div class="navigation">
-			<button class="evaluate">Evaluate</button>
-			<button class="next">Next</button>
+		
+		<!-- Questions & Answers Section-->
+		<div class="list-group list-group-flush">
+			<div id="quiz">
+				<div class="list-group-item" id="question"></div>
+				<div class="choices">
+					<div class="list-group-item" id="A"></div>
+					<div class="list-group-item" id="B"></div>
+				  	<div class="list-group-item" id="C"></div>
+				  	<div class="list-group-item" id="D"></div>
+				  	<div class="list-group-item" id="answer"></div>
+				</div>
+		
+		<!-- Timer box-->
+		<div class="timer">
+			<div id="counter"></div>
 		</div>
 	</div>
-	<script src="./assets/js/script.js"></script>
+
+	<!-- Intital and Save Score -->
+	<div>
+		<div class="score-container">
+			<div id="score">
+				<input id="Initials" placeholder="Type Initials Here">
+				<br>
+				<button id="savebtn">Initials</button>
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>
