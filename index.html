@@ -12,46 +12,48 @@
 </head>
 
 <body>
-	<!-- container for main content and start button -->
-	<div class="container">
-		<div id="start">
-			<h1>Coding Quiz</h1>
-			<br>
-			<p>
-				Test your knoweledge on Javascript by answering the following trivia questions! You've got 50 seconds on the clock!
-				Be careful! With each incorrect answer, 10 seconds will be deducted from your time remaining! Final score is determined based on remaining time.
-			</p>
-			<button type="button" id="sbtn" class="btn btn-outline-light btn-lg">Start</button>
-		</div>
-		
-		<!-- Questions & Answers Section-->
-		<div class="list-group list-group-flush">
-			<div id="quiz">
-				<div class="list-group-item" id="question"></div>
-				<div class="choices">
-					<div class="list-group-item" id="A"></div>
-					<div class="list-group-item" id="B"></div>
-				  	<div class="list-group-item" id="C"></div>
-				  	<div class="list-group-item" id="D"></div>
-				  	<div class="list-group-item" id="answer"></div>
-				</div>
-		
-		<!-- Timer box-->
-		<div class="timer">
-			<div id="counter"></div>
-		</div>
+<!-- container for main content and start button -->
+<h1 class="header">Javascript Quiz</h1>
+
+<div class="container">
+	<div id="start">
+		<p> 
+			Test your knoweledge on Javascript by answering the following trivia questions! You've got 50 seconds on the clock!
+			Be careful! With each incorrect answer, 10 seconds will be deducted from your time remaining! Final score is determined based on remaining time.
+		</p>
+		<button id="sbutton" class="btn btn-outline-light btn-lg">Start</button>
 	</div>
 
-	<!-- Intital and Save Score -->
-	<div>
-		<div class="score-container">
-			<div id="score">
-				<input id="Initials" placeholder="Type Initials Here">
-				<br>
-				<button id="savebtn">Initials</button>
+	<!-- Container to hold the questions and answers-->
+<div>
+		<div id="quiz">
+			<div class="list-group-item" id="question"></div>
+			<div class="choices">
+				<div id="A"></div>
+				<div id="B"></div>
+				<div id="C"></div>
+				<div id="D"></div>
+				<div id="answer"></div>
 			</div>
+
+<!-- Timer box-->
+	   <div class="timer">
+		<div id="counter"></div>
+	 </div>
+</div>
+
+  <!-- To insert score and initials-->
+</div>
+	<div class="scoreContainer">
+		<div id="score">
+			<input id="providedInitials"  placeholder="Type Initials Here">
+			<br>
+			<button id="savebtn">Initials</button>
 		</div>
 	</div>
+</div>
+
+<script src="./assets/js/script.js"></script>
 
 </body>
 </html>
