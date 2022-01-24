@@ -31,5 +31,11 @@ THEN I can save my initials and score
 Mock-Up
 ```
 
+![alt text](assets/images/Quiz-screenshot.jpg "Code Quiz")
+
 ## Git Hub
 ___
+
+Please find the URL for the completed challenge: https://bdjs0033.github.io/Code_Quiz/
+
+Please find the URL for the repository: https://github.com/BDJS0033/Code_Quiz
