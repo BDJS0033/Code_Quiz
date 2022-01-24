@@ -12,47 +12,25 @@
 </head>
 
 <body>
-<!-- container for main content and start button -->
+<!--Highscores-->
+<a class="highscore" href="Highscore.html">View Highscores</a>
+
 <h1 class="header">Javascript Quiz</h1>
-
-<div class="container">
-	<div id="start">
-		<p> 
-			Test your knoweledge on Javascript by answering the following trivia questions! You've got 50 seconds on the clock!
-			Be careful! With each incorrect answer, 10 seconds will be deducted from your time remaining! Final score is determined based on remaining time.
-		</p>
-		<button id="sbutton" class="btn btn-outline-light btn-lg">Start</button>
+<!-- container for main content and start button. Added styling from Bootstrap for the button -->
+<div id="container">
+	<!-- div for timer-->
+	<div id="currentTime">Timer</div>
+	<!--div for start-->
+	<div id="quizQuestions">
+		<p> Test your knoweledge on Javascript by answering the following trivia questions! Answer the questions and beat the clock! </p>
+		<p>Answer carefully! Each incorrect answer deducts 10 seconds from your time remaining! Final score is determined based on remaining time.</p>
 	</div>
-
-	<!-- Container to hold the questions and answers-->
-<div>
-		<div id="quiz">
-			<div class="list-group-item" id="question"></div>
-			<div class="choices">
-				<div id="A"></div>
-				<div id="B"></div>
-				<div id="C"></div>
-				<div id="D"></div>
-				<div id="answer"></div>
-			</div>
-
-<!-- Timer box-->
-	   <div class="timer">
-		<div id="counter"></div>
-	 </div>
+	<ul id="choicesUl"></ul>
+	<!--start button-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<button id="sbutton" class="btn btn-outline-light btn-lg">Start</button>
 </div>
-
-  <!-- To insert score and initials-->
-</div>
-	<div class="scoreContainer">
-		<div id="score">
-			<input id="providedInitials"  placeholder="Type Initials Here">
-			<br>
-			<button id="savebtn">Initials</button>
-		</div>
-	</div>
-</div>
-
+	
 <script src="./assets/js/script.js"></script>
 
 </body>
